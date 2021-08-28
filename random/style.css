@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav_all {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.6s;
+}
+
+.nav_bar {
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #2d2d2d;
+}
+
+.logo {
+    font-family: 'Mate SC', serif;
+    font-size: 3rem;
+    padding-left: 1rem;
+}
+
+.logo_link {
+    text-decoration: none;
+    color: white;
+}
+
+#chrome-search {
+    cursor: not-allowed;
+    opacity: 0.5;
+    width: 35rem;
+    height: 3em;
+    padding-left: 15px;
+    padding-right: 10px;
+    border-radius: 2rem;
+    margin-left: 8rem;
+}
+
+.btn_icon {
+    width: fit-content;
+    height: fit-content;
+}
+
+button:hover {
+    cursor:pointer;
+}
+
+.nav_icons {
+    padding-right: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.btn_nav {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_categories {
+    background-color: rgb(68, 68, 68);
+    border-top: black;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 2rem;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    word-spacing: 15px;
+}
+
+.categories_tekst {
+    padding-right: 40px;
+    padding-left: 10px;
+}
+
+.cat_btn {
+    background-color: transparent;
+    border-style: none;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.heading {
+    display: flex;
+    font-family: 'Roboto Mono', monospace;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    height: 45px;
+    /* background-color: rgb(231, 231, 231); */
+    margin-top: 128px;
+}
+
+main {
+    margin-top: 128px;
+}
+
+.section_1 {
+    min-height: 51vh;
+    display: flex;
+    margin: 15px 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+.items_info {
+    display: flex;
+    max-height: 339px;
+    flex-direction: column;
+    margin: 35px;
+    font-family: monospace;
+    text-decoration: none;
+    color: black;
+    flex-wrap: wrap;
+    max-width: 275px;
+}
+
+p {
+    line-height: 25px;
+    text-align: right;
+}
+
+.price {
+    font-weight:900;
+    font-size: 14px;
+}
+
+.foot {
+    display: flex;
+    background-color: rgb(53, 41, 41);
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    justify-content: space-evenly;
+    padding: 20px;
+    padding-bottom: 30px;
+}
+
+.foot_item {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.foot_links {
+    text-decoration: none;
+    color: white;
+}
+
+.foot_2 {
+    background-color: rgb(245, 245, 245);
+    font-family: monospace;
+    font-style: oblique;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.foot_copy {
+    text-align: center;
+}
+
+.cart_popup {
+    display: none;
+    position: absolute;
+    width: fit-content;
+    flex-direction: column;
+    top: 64px;
+    right: 50px;
+    background-color: #2d2d2d;
+    border-right: antiquewhite solid 1px;
+    border-left: antiquewhite solid 1px;
+    border-bottom: antiquewhite solid 1px;
+}
+
+.cart_item {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 5px;
+}
+
+.cart_tekst {
+    color: white;
+    padding-left: 8px;
+}
+
+.cart_item:hover {
+    transform: scale(1.03);
+    background-color: rgba(255, 255, 255, 0.144);
+}
+
+#cart-btn:hover .cart_popup{
+    display: flex;
+}
+
+#icon-btn {
+    margin-right: 5px;
+    border-style: none;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+#cart-btn {
+    margin-left: 5px;
+}
+
+.profile_popup {
+    display: none;
+    background-color: #2d2d2d;
+    border: 1px solid rgb(204, 204, 204);
+    position: absolute;
+    flex-direction: column;
+    top: 64px;
+    right: 0vw;
+    z-index: 1;
+}
+
+.cart_itemv2 {
+    display: flex;
+    width: 300px;
+    overflow-wrap: break-word;
+    text-decoration: none;
+    color: white;
+}
+
+.cart_tekstv2 {
+    margin-left: 8px;
+    font-family: monospace;
+    align-items: center;
+    width: 232px;
+}
+
+.cart_item_info {
+    line-height: normal;
+    text-align: left;
+}
+
+.cart_price {
+    text-align:right;
+    font-weight: 900;
+}
+
+.items_tkst {
+    text-align: left;
+    line-height: normal;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.checkout_info {
+    margin-left: 3rem;
+}
+
+.section_1 {
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+    justify-content: left;
+}
+
+.checkout_item {
+    text-align: left;
+    font-size: 1.83rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.checkout_price {
+    text-align: left;
+    font-size: 1.25rem;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.637);
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.black {
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px 0.5px black;
+    margin: 5px;
+}
+
+.color {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border: 2px solid rgb(221, 221, 221);
+    box-shadow: 0px 0px 5px 0.5px black;
+    margin: 5px;
+    transition: all 0.2s;
+}
+
+.color_tekst {
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25rem;
+    margin-top: 54px;
+}
+
+.colors {
+    display: flex;
+    flex-direction: row;
+}
+
+.select_size {
+    height: 35px;
+    width: 50px;
+    font-size: 1rem;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding-left: 7px;
+    margin: 5px;
+}
+
+option {
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.sizes {
+    display: flex;
+    flex-direction: column;
+}
+
+.size_label {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25rem;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: column;
+}
+
+.quantity_label {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25rem;
+}
+
+.quantity_storage {
+    margin: 5px;
+    width: fit-content;
+}
+
+.quantity_input {
+    height: 35px;
+    width: 35px;
+    padding-left: 9px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.25rem;
+}
+
+.item_submit {
+    height: 45px;
+    width: 456px;
+    margin-top: 35px;
+    background-color: rgb(68, 68, 68);
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.50rem;
+    transition: all 0.3s;
+}
+
+.checkout_image {
+    border: 1px solid black;
+}
+
+.item_submit:hover {
+    background-color: #1a1a1a;
+}
+
+.btn_delete {
+    height: fit-content;
+    width: fit-content;
+    align-self: center;
+    margin-left: 15px;
+    z-index: 2;
+}
+
+.item_container {
+    display: flex;
+    flex-direction: row;
+    border: 1px groove rgb(255, 255, 255);
+    margin: 2px;
+    padding: 10px;
+}
+
+.cart_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cart_quantity {
+    font-weight: 600;
+}
+
+.cart_size {
+    margin-right: 30px;
+    font-weight: 600;
+}
